@@ -40,7 +40,7 @@ class PinsController < ApplicationController
       end
     end
   end
-
+  
   # PATCH/PUT /pins/1
   # PATCH/PUT /pins/1.json
   def update
@@ -78,6 +78,6 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image)
     end
 end
